@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 62, 5%;
+  background-color: white;
+}
+
+.cabecario li {
+  list-style: none;
+  margin: 2%;
+  font-size: 1.4em;
+}
+
+.cabecario li:first-child {
+  display: none;
+}
+
+.cabecario ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.hero-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 510px;
+}
+
+.hero-banner img {
+  margin-top: 0%;
+}
+
+.hero-banner .logo-img {
+  margin-top: 10%;
+}
+
+.log {
+  padding: 3%;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  overflow: hidden;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 20%;
+  }
+  to {
+    margin-left: 60%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 20%;
+  }
+  to {
+    margin-left: 60%;
+  }
+}
+
+.principal {
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#f83232));
+  background: linear-gradient(0.25turn, #fff, #f83232);
+  height: 500px;
+}
+
+.principal p {
+  color: white;
+  padding: 2.5%;
+  font-size: 1.6em;
+  text-align: right;
+  display: block;
+}
+
+.cardapio-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+}
+
+.localizacao {
+  background: -webkit-gradient(linear, left top, right top, from(#f83232), to(#fff));
+  background: linear-gradient(0.25turn, #f83232, #fff);
+  height: 500px;
+}
+
+.localizacao p {
+  color: white;
+  padding: 2.5%;
+  font-size: 1.6em;
+  display: block;
+}
+
+.mapas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.cabecario a {
+  text-decoration: none;
+}
+
+.main-form {
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#f83232));
+  background: linear-gradient(0.25turn, #fff, #f83232);
+}
+
+.container-form {
+  margin-top: 3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 600px;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form input,
+label {
+  margin-top: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-options input,
+.form-options label {
+  margin-left: 5%;
+}
+
+footer {
+  color: red;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 1%;
+}
+
+@media (max-width: 1024px) {
+  .cabecario ul {
+    display: block;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right top, from(#f83232), to(#fff));
+    background: linear-gradient(0.25turn, #f83232, #fff);
+  }
+  .cabecario ul li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  img {
+    width: 100%;
+  }
+  .hero-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .log {
+    visibility: hidden;
+  }
+  .principal {
+    margin-top: 5%;
+  }
+  .cardapio-images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cardapio-images img {
+    height: 200px;
+  }
+  .localizacao p {
+    display: block;
+    margin-top: 150px;
+  }
+  .mapas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  iframe {
+    width: 100%;
+  }
+  .container-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form label {
+    display: block;
+    margin-left: 5%;
+  }
+  .form input {
+    margin-left: 5%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62, 5%;
+  background-color: white;
+}
+
+.cabecario li {
+  list-style: none;
+  margin: 2%;
+  font-size: 1.4em;
+  &:first-child {
+    display: none;
+  }
+}
+
+.cabecario ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-banner {
+  display: flex;
+  justify-content: space-evenly;
+  height: 510px;
+
+  img {
+    margin-top: 0%;
+  }
+  .logo-img {
+    margin-top: 10%;
+  }
+}
+
+.log {
+  padding: 3%;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-name: slidein;
+  overflow: hidden;
+  transition-timing-function: ease-out;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 20%;
+  }
+
+  to {
+    margin-left: 60%;
+  }
+}
+
+.principal {
+  background: linear-gradient(0.25turn, #fff, rgb(248, 50, 50));
+  height: 500px;
+}
+
+.principal p {
+  color: white;
+  padding: 2.5%;
+  font-size: 1.6em;
+  text-align: right;
+  display: block;
+}
+
+.cardapio-images {
+  display: flex;
+  height: 300px;
+}
+
+.localizacao {
+  background: linear-gradient(0.25turn, rgb(248, 50, 50), #fff);
+  height: 500px;
+}
+
+.localizacao p {
+  color: white;
+  padding: 2.5%;
+  font-size: 1.6em;
+  display: block;
+}
+
+.mapas {
+  display: flex;
+  height: 60%;
+  justify-content: space-evenly;
+}
+
+.cabecario a {
+  text-decoration: none;
+}
+
+.main-form {
+  background: linear-gradient(0.25turn, #fff, rgb(248, 50, 50));
+}
+
+.container-form {
+  margin-top: 3%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  height: 600px;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form input,
+label {
+  margin-top: 10%;
+  justify-content: center;
+}
+
+.form-options {
+  display: flex;
+  input,
+  label {
+    margin-left: 5%;
+  }
+}
+
+footer {
+  color: red;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 1%;
+}
+
+@media (max-width: 1024px) {
+  .cabecario ul {
+    display: block;
+    text-align: center;
+    background: linear-gradient(0.25turn, rgb(248, 50, 50), #fff);
+    li {
+      justify-content: center;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .hero-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .log {
+    visibility: hidden;
+  }
+
+  .principal {
+    margin-top: 5%;
+  }
+
+  .cardapio-images {
+    flex-direction: column;
+    img {
+      height: 200px;
+    }
+  }
+
+  .localizacao p {
+    display: block;
+    margin-top: 150px;
+  }
+
+  .mapas {
+    flex-direction: column;
+  }
+  iframe {
+    width: 100%;
+  }
+
+  .container-form {
+    flex-direction: column;
+  }
+
+  .form label {
+    display: block;
+    margin-left: 5%;
+  }
+  .form input {
+    margin-left: 5%;
+  }
+}
