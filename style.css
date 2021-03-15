@@ -3,194 +3,307 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 62, 5%;
 }
 
 body {
-  font-size: 62, 5%;
-  background-color: white;
+  background-color: whitesmoke;
 }
 
-.cabecario li {
-  list-style: none;
-  margin: 2%;
-  font-size: 1.4em;
-}
-
-.cabecario li:first-child {
-  display: none;
-}
-
-.cabecario ul {
+.topo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.topo header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-.hero-banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  height: 510px;
+.topo header nav ul li {
+  list-style: none;
+  padding: 1%;
+  font-size: 1.5em;
 }
 
-.hero-banner img {
-  margin-top: 0%;
-}
-
-.hero-banner .logo-img {
-  margin-top: 10%;
-}
-
-.log {
-  padding: 3%;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-  overflow: hidden;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-}
-
-@-webkit-keyframes slidein {
-  from {
-    margin-left: 20%;
-  }
-  to {
-    margin-left: 60%;
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 20%;
-  }
-  to {
-    margin-left: 60%;
-  }
-}
-
-.principal {
-  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#f83232));
-  background: linear-gradient(0.25turn, #fff, #f83232);
-  height: 500px;
-}
-
-.principal p {
-  color: white;
-  padding: 2.5%;
-  font-size: 1.6em;
-  text-align: right;
-  display: block;
-}
-
-.cardapio-images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 300px;
-}
-
-.localizacao {
-  background: -webkit-gradient(linear, left top, right top, from(#f83232), to(#fff));
-  background: linear-gradient(0.25turn, #f83232, #fff);
-  height: 500px;
-}
-
-.localizacao p {
-  color: white;
-  padding: 2.5%;
-  font-size: 1.6em;
-  display: block;
-}
-
-.mapas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 60%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.cabecario a {
+.topo header nav ul a {
+  color: whitesmoke;
   text-decoration: none;
 }
 
-.main-form {
-  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#f83232));
-  background: linear-gradient(0.25turn, #fff, #f83232);
+.imagem-topo {
+  display: block;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
 }
 
-.container-form {
-  margin-top: 3%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.topo h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 2%;
+  color: whitesmoke;
+}
+
+.logos-back-front {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 600px;
+  margin-top: 5%;
+  margin-bottom: 3%;
 }
 
-.form h2 {
-  text-align: center;
+.logos-back-front p {
+  margin-top: 5%;
+  font-size: 1.2em;
+  color: whitesmoke;
 }
 
-.form input,
-label {
-  margin-top: 10%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.form-options {
+.estudo-escolas {
+  background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.form-options input,
-.form-options label {
-  margin-left: 5%;
+.estudo-escolas h2 {
+  font-size: 2em;
+  padding: 3%;
+  text-shadow: 5px 5px lightgrey;
+}
+
+.estudo-escolas-listas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.estudo-escolas-listas ul, .estudo-escolas-listas h3 {
+  font-size: 1.2em;
+  margin-top: 2%;
+  font-size: 1.5em;
+}
+
+.canais-digitais {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 3%;
+}
+
+.canais-digitais-mobile {
+  display: none;
+}
+
+.contato {
+  padding: 3%;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.contato h2 {
+  display: block;
+  text-align: center;
+  padding: 3%;
+  font-size: 2em;
+  color: whitesmoke;
+}
+
+form table {
+  border: 5px solid black;
+  border-radius: 10%;
+  font-size: 1.2em;
+  color: whitesmoke;
+}
+
+form table tr {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+}
+
+form table td, form table label, form table input, form table textarea {
+  padding: 3%;
+  width: 400px;
+}
+
+.contato-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contato-icones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contato-icones a {
+  color: inherit;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+}
+
+.contato-icones a:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 footer {
-  color: red;
+  background-image: whitesmoke;
+  font-size: 1.2em;
+  display: block;
   text-align: center;
-  font-size: 1.1em;
   padding: 1%;
+  color: black;
 }
 
-@media (max-width: 1024px) {
-  .cabecario ul {
-    display: block;
+.body-erro {
+  background-color: white;
+}
+
+.home-img {
+  position: absolute;
+  top: 100px;
+  width: 20vh;
+  top: 0;
+  -webkit-animation: backhome 2s infinite;
+          animation: backhome 2s infinite;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.erro-img {
+  height: 90vh;
+  width: 100vw;
+  margin-top: 10vh;
+}
+
+@-webkit-keyframes backhome {
+  from {
+    width: 20vh;
+  }
+  to {
+    width: 25vh;
+  }
+}
+
+@keyframes backhome {
+  from {
+    width: 20vh;
+  }
+  to {
+    width: 25vh;
+  }
+}
+
+@media (max-width: 540px) {
+  .topo header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    font-size: 0.8em;
+  }
+  .imagem-topo {
+    width: 40%;
+  }
+  .topo h1 {
+    font-size: 2em;
+    margin-top: 5%;
+  }
+  .logos-back-front {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5%;
+  }
+  .logos-back-front p {
+    font-size: 1em;
+    padding: 3%;
     text-align: center;
-    background: -webkit-gradient(linear, left top, right top, from(#f83232), to(#fff));
-    background: linear-gradient(0.25turn, #f83232, #fff);
   }
-  .cabecario ul li {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .estudo-escolas h2 {
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-shadow: none;
   }
-  img {
-    width: 100%;
+  .estudo-escolas-listas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5%;
   }
-  .hero-banner {
+  .estudo-escolas-listas ul, .estudo-escolas-listas h3 {
+    font-size: 1em;
+    padding: 3%;
+  }
+  .canais-digitais {
+    display: none;
+  }
+  .canais-digitais-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -202,46 +315,39 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  .log {
-    visibility: hidden;
+  .canais-digitais-mobile iframe {
+    margin-top: 10%;
   }
-  .principal {
-    margin-top: 5%;
+  .contato {
+    margin-top: 10%;
   }
-  .cardapio-images {
+  .contato-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .cardapio-images img {
-    height: 200px;
+  form table tr {
+    width: 300px;
   }
-  .localizacao p {
-    display: block;
-    margin-top: 150px;
+  form table tr td, form table tr label, form table tr input, form table tr textarea {
+    width: 200px;
   }
-  .mapas {
-    -webkit-box-orient: vertical;
+  .contato-icones {
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 07%;
   }
-  iframe {
-    width: 100%;
-  }
-  .container-form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .form label {
-    display: block;
-    margin-left: 5%;
-  }
-  .form input {
-    margin-left: 5%;
+  .contato-icones a {
+    padding: 3%;
   }
 }
 /*# sourceMappingURL=style.css.map */
